@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div style="display: flex;height: 100vh;justify-content: center;align-items: center;flex-direction: column;">
+        <h1 style="color:#ffffff">Customer Survey Form</h1>
+    <form id="surveyForm">
+       
+        <div class="row">
+            <div class="col">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Barry" required>
+            </div>
+            <div class="col">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="John" required>
+            </div>
+        </div><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <!-- Add more countries as needed -->
+        </select><br>
+
+        <div class="row">
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        </div><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" placeholder="student" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required><br><br>
+        
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890" required><br><br>
+        
+
+        <input type="button" value="Submit" onclick="handleSubmit()">
+        <input type="reset" value="Reset">
+
+       
+    </form>
+    <footer style="color: #ffffff;">
+        © 2018 customersurvey form, All rights reserved | Design by <a href='https://www.linkedin.com/in/vikas-manchikanti-2a1691154/' target="_blank">Vikas Manchikanti</a>
+    </footer>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
