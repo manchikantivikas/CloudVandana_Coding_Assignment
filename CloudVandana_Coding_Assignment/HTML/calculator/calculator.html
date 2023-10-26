@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="3"> 
+                <input type="text" id="display"> 
+            </td> 
+            <td><input type="button" class="ac" data-value="AC" value = "AC"></td> 
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" data-value="9" value="9"></td> 
+            <td><input type="button" data-value="8" value="8"></td> 
+            <td><input type="button" data-value="7" value="7"></td> 
+            <td><input type="button" class = "op" data-value="+" value="+"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" data-value="4" value="4"></td> 
+            <td><input type="button" data-value="5" value="5"></td> 
+            <td><input type="button" data-value="6" value="6"></td> 
+            <td><input type="button" class = "op" data-value="-" value="-"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" data-value="1" value = "1"></td> 
+            <td><input type="button" data-value="2" value = "2"></td> 
+            <td><input type="button" data-value="3" value = "3"></td> 
+            <td><input type="button" class = "op" data-value="/" value = "&#247;"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" data-value="." value = "."></td> 
+            <td><input type="button" data-value="0" value = "0"></td> 
+            <td><input type="button" data-value="=" value = "="></td> 
+            <td><input type="button" class = "op" data-value="*" value = "&#215;"></td> 
+        </tr> 
+    </table> 
+    <script src="scripts.js"></script>
+</body>
+
+</html>

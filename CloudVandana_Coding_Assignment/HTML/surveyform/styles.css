@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E90FF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#surveyForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust based on the design */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"], 
+input[type="date"], 
+input[type="email"], 
+input[type="tel"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="button"], 
+input[type="reset"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="button"]:hover, 
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.row .col:last-child {
+    margin-right: 0;
+}
+
+
+.gender-row {
+    align-items: center;
+}
+
+.gender-col {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.gender-row .gender-col:last-child {
+    margin-right: 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 480px) {
+    #surveyForm {
+        width: 90%; /* Adjust to fill most of the screen */
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .col {
+        margin-right: 0; /* Remove margin since columns are stacked */
+        margin-bottom: 10px; /* Add some margin at the bottom for spacing */
+    }
+}
+
+.gender-row {
+    flex-direction: column;
+}
+
+
+
